@@ -17,7 +17,9 @@ admin.initializeApp({
 app.use(cors());
 app.use(bodyParser.json());
 
-
+app.get('/',(req,res)=>{
+    res.send('Hello World');
+})
 
 client.connect(err => {
     let idToken;
